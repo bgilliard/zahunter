@@ -11,11 +11,12 @@ import MapKit
 import CoreLocation
 class ViewController: UIViewController {
 
-    
+    let locationManager = CLLocationManager()
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        locationManager.requestWhenInUseAuthorization()
+        mapView.showsUserLocation = true
     }
 
 
