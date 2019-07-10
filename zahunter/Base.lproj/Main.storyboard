@@ -40,12 +40,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMy-CN-JRL">
+                                <rect key="frame" x="155" y="650" width="105" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Website"/>
+                                <connections>
+                                    <action selector="onWebsiteButtonTapped:" destination="gda-UI-Cdn" eventType="touchDown" id="Dkc-UO-uTw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EE-gn-RWM">
                                 <rect key="frame" x="142" y="531" width="130" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Directions"/>
                                 <connections>
-                                    <action selector="onWebsiteButtonTapped:" destination="gda-UI-Cdn" eventType="touchDown" id="Dkc-UO-uTw"/>
+                                    <action selector="onDirectionsButtonTapped:" destination="gda-UI-Cdn" eventType="touchUpInside" id="JI0-s6-VHB"/>
                                 </connections>
                             </button>
                         </subviews>
